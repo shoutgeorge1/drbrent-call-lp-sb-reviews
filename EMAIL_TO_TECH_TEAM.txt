@@ -1,0 +1,75 @@
+Subject: CallRail Setup Required for Dr. Brent Landing Pages - Phone Number Pools & Google Ads Integration
+
+Hi Tech Team,
+
+We have two new call-only landing pages that are ready to go live and need CallRail integration set up. These pages are mobile-optimized and designed specifically for phone call conversions.
+
+LANDING PAGES READY FOR DEPLOYMENT:
+
+1. Beverly Hills Landing Page
+   - URL: https://dr-brent-call-lps-1.vercel.app/
+   - Repository: shoutgeorge1/dr-brent-call-lps-1
+   - Phone Number: (310) 919-1060
+   - Location: Beverly Hills, CA
+
+2. Santa Barbara Landing Page
+   - URL: https://dr-brent-call-lps-sb.vercel.app/
+   - Repository: shoutgeorge1/dr-brent-call-lps-sb
+   - Phone Number: (805) 979-2535
+   - Location: Santa Barbara, CA
+
+CALLRAIL SETUP REQUIREMENTS:
+
+1. Direct Call Numbers
+   We need direct call numbers set up in CallRail for both landing pages:
+   - Beverly Hills: A tracking number that forwards to (310) 919-1060
+   - Santa Barbara: A tracking number that forwards to (805) 979-2535
+
+2. Website Pools
+   We need website pools configured in CallRail for both landing pages to enable Dynamic Number Insertion (DNI). This will allow us to:
+   - Track which landing page generated the call
+   - Attribute calls to specific marketing campaigns
+   - Feed conversion data back to Google Ads for higher quality lead tracking
+
+3. JavaScript Code Implementation
+   Both landing pages have placeholder comments where the CallRail DNI script needs to be added. The script should be inserted just before the closing </body> tag.
+   
+   Location in code:
+   - Look for: <!-- CallRail Dynamic Number Insertion -->
+   - Replace the empty script tag with the CallRail swap.js URL
+   
+   Beverly Hills file: index.html (line ~1149)
+   Santa Barbara file: index.html (line ~1149)
+
+4. Google Ads Integration
+   We need the CallRail integration configured to send call conversion data back to Google Ads. This will help us:
+   - Track call conversions in Google Ads
+   - Optimize campaigns based on call quality
+   - Improve lead quality scoring
+
+CALLRAIL ACCOUNT INFORMATION:
+- We have two accounts set up in CallRail under the main account
+- If you need me to set this up, I'm happy to work with you on it
+- Please let me know if you need access credentials or account details
+
+TECHNICAL NOTES:
+- All phone numbers are plain text in the DOM (not in images) - CallRail can swap them automatically
+- Phone numbers appear in: header, hero section, procedure cards, and footer
+- Both pages are mobile-optimized and responsive
+- UTM parameter tracking is already implemented
+
+NEXT STEPS:
+1. Set up direct call numbers in CallRail for both locations
+2. Configure website pools for Dynamic Number Insertion
+3. Provide the CallRail swap.js script URLs for both landing pages
+4. I'll add the JavaScript code to both repositories and push the updates
+5. Configure Google Ads integration for call conversion tracking
+
+Please let me know:
+- If you can handle the CallRail setup, or if you need me to do it
+- The CallRail swap.js script URLs once the pools are configured
+- Any questions or additional information needed
+
+Thanks!
+
+
