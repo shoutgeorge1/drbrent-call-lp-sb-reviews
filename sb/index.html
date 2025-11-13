@@ -527,6 +527,115 @@
             box-shadow: 0 4px 20px rgba(0,0,0,0.1);
         }
         
+        /* Reviews Section */
+        .reviews-section {
+            padding: 100px 0;
+            background: var(--base-warm);
+            text-align: center;
+        }
+        
+        .reviews-section h2 {
+            margin-bottom: 20px;
+            color: var(--contrast);
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+        
+        .reviews-section .reviews-subtitle {
+            font-size: 18px;
+            color: var(--contrast-2);
+            margin-bottom: 60px;
+            font-weight: 400;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.8;
+            letter-spacing: 1px;
+        }
+        
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 35px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+        
+        .review-item {
+            background: var(--base-3);
+            padding: 45px 35px;
+            border-radius: 0;
+            text-align: left;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            border: 1px solid rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .review-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+        
+        .review-item h3 {
+            font-size: 22px;
+            font-weight: 500;
+            color: var(--contrast);
+            margin-bottom: 20px;
+            line-height: 1.4;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 0.5px;
+        }
+        
+        .review-stars {
+            margin-bottom: 15px;
+            order: -1;
+        }
+        
+        .review-stars img {
+            width: 120px;
+            height: 24px;
+            display: block;
+        }
+        
+        .review-date {
+            font-size: 12px;
+            color: var(--contrast-2);
+            margin-bottom: 20px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        
+        .review-item p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: var(--contrast);
+            font-weight: 400;
+            margin-bottom: 25px;
+            letter-spacing: 0.5px;
+            flex-grow: 1;
+        }
+        
+        .review-author {
+            font-size: 14px;
+            color: var(--contrast);
+            font-weight: 500;
+            margin-top: auto;
+            padding-top: 20px;
+            border-top: 1px solid rgba(0,0,0,0.08);
+            letter-spacing: 0.5px;
+        }
+        
+        .review-author strong {
+            font-weight: 600;
+            color: var(--contrast);
+        }
+        
         /* Footer Section */
         .footer-section {
             background: var(--contrast);
@@ -670,6 +779,33 @@
             
             .grid-container {
                 padding: 0 30px;
+            }
+            
+            .reviews-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+                padding: 0 30px;
+            }
+            
+            .reviews-section {
+                padding: 80px 0;
+            }
+            
+            .reviews-section h2 {
+                font-size: 36px;
+            }
+            
+            .reviews-section .reviews-subtitle {
+                font-size: 17px;
+                margin-bottom: 50px;
+            }
+            
+            .review-item {
+                padding: 40px 30px;
+            }
+            
+            .review-item h3 {
+                font-size: 20px;
             }
         }
         
@@ -854,6 +990,55 @@
                 grid-template-columns: 1fr;
                 gap: 30px;
                 padding: 0 20px;
+            }
+            
+            .reviews-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                padding: 0 20px;
+            }
+            
+            .reviews-section {
+                padding: 60px 0;
+            }
+            
+            .reviews-section h2 {
+                font-size: 32px;
+                margin-bottom: 15px;
+            }
+            
+            .reviews-section .reviews-subtitle {
+                font-size: 16px;
+                margin-bottom: 40px;
+            }
+            
+            .review-item {
+                padding: 35px 25px;
+            }
+            
+            .review-item h3 {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+            
+            .review-item p {
+                font-size: 15px;
+                line-height: 1.7;
+            }
+            
+            .review-stars img {
+                width: 110px;
+                height: 22px;
+            }
+            
+            .review-date {
+                font-size: 11px;
+                margin-bottom: 15px;
+            }
+            
+            .review-author {
+                font-size: 13px;
+                padding-top: 15px;
             }
             
             .footer-section {
@@ -1271,56 +1456,56 @@
             <p class="reviews-subtitle">See what our clients have to say about their experience with Dr. Brent and the office, for both surgery and non-surgical options:</p>
             <div class="reviews-grid">
                 <div class="review-item">
-                    <h3>My Experience ... Was The Absolute Best Possible</h3>
                     <div class="review-stars">
                         <img src="https://www.drbrent.com/wp-content/uploads/5-stars-6.png" alt="5 stars" />
                     </div>
-                    <div class="review-date">– Written on October 24, 2016</div>
+                    <h3>My Experience ... Was The Absolute Best Possible</h3>
+                    <div class="review-date">October 24, 2016</div>
                     <p>My experience with Dr. Moelleken and his staff was the absolute best possible. Dr. was very interested in his patient as were his staff. Making you comfortable and secure in the knowledge of his skills, which are the best. No problems. No looking "done" just better. Thank you.</p>
                     <div class="review-author">by <strong>SG</strong></div>
                 </div>
                 <div class="review-item">
-                    <h3>I Look About 10 Years Younger and About 20 Pounds Thinner</h3>
                     <div class="review-stars">
                         <img src="https://www.drbrent.com/wp-content/uploads/5-stars-6.png" alt="5 stars" />
                     </div>
-                    <div class="review-date">– Written on September 7, 2016</div>
+                    <h3>I Look About 10 Years Younger and About 20 Pounds Thinner</h3>
+                    <div class="review-date">September 7, 2016</div>
                     <p>Dr. Moelleken and his staff were wonderful from start to finish. I am 51 years old. I had a face lift, my upper lids done, LiveFill®, chin implant and a necklace. Prior to surgery I was very self conscious about my jowls and neck. Dr. Moelleken did an incredible job! I look about 10 years younger and about 20 pounds thinner. It has been three months since my surgery and I couldn'\''t be happier. I highly recommend Dr. Moelleken, it has been worth it.</p>
                     <div class="review-author">by <strong>JM</strong></div>
                 </div>
                 <div class="review-item">
-                    <h3>The Grade Would Be A+++++</h3>
                     <div class="review-stars">
                         <img src="https://www.drbrent.com/wp-content/uploads/5-stars-6.png" alt="5 stars" />
                     </div>
-                    <div class="review-date">– Written on August 11, 2016</div>
+                    <h3>The Grade Would Be A+++++</h3>
+                    <div class="review-date">August 11, 2016</div>
                     <p>The dr. and his staff were great! I can'\''t say enough about them. The dr. is very honest and upfront on what to expect. I am very happy with the results, I am a new man. I used to lower my neck and see fat rolls coming out of each side of my neck and bottom chin. One week later I did it and the neck didn'\''t even bulge out slightly. Additionally removed abnormal bulges that occurred due to facial trauma and are now gone. The grade would be A+++++.</p>
                     <div class="review-author">by <strong>RC</strong></div>
                 </div>
                 <div class="review-item">
-                    <h3>I Could Not Be More Thrilled With The Results!</h3>
                     <div class="review-stars">
                         <img src="https://www.drbrent.com/wp-content/uploads/5-stars-6.png" alt="5 stars" />
                     </div>
-                    <div class="review-date">– Written on July 20, 2016</div>
+                    <h3>I Could Not Be More Thrilled With The Results!</h3>
+                    <div class="review-date">July 20, 2016</div>
                     <p>Dr. Moelleken and all his staff were so sweet and accommodating when it came to all my needs. Dr. Moelleken was quick to return phone calls if there were any concerns or questions. After having three children I had so much extra skin, I decided to have a full abdominoplasty and breast lift with the removal of breast implants. I could not be more thrilled with the results! I have such high regard and trust in Dr. Moelleken and all his staff that I would send anyone to him with complete confidence.</p>
                     <div class="review-author">by <strong>JQ</strong></div>
                 </div>
                 <div class="review-item">
-                    <h3>I Highly Recommend The "Hybrid Abdominoplasty"</h3>
                     <div class="review-stars">
                         <img src="https://www.drbrent.com/wp-content/uploads/5-stars-6.png" alt="5 stars" />
                     </div>
-                    <div class="review-date">– Written on June 30, 2016</div>
+                    <h3>I Highly Recommend The "Hybrid Abdominoplasty"</h3>
+                    <div class="review-date">June 30, 2016</div>
                     <p>For years I was searching for a doctor that would fix my stomach without leaving me with a huge hip-to-hip scar. I read an article on Dr. Moelleken'\''s "Hybrid abdominoplasty" and was amazed at the results. After meeting him and understanding the procedure, I knew he was the right doctor and the right procedure for me. He not only impresses me with his incredible background, resume, and knowledge, but he was so down to earth, easy to talk to and a good listener. I was also impressed with his support staff and nurses. They were considerate to my conditions and needs. I highly recommend Dr. Moelleken and his staff. And for anyone who is fit needs a little fixing-up after having kids, I highly recommend the "Hybrid abdominoplasty" that only Dr. Moelleken is presently performing.</p>
                     <div class="review-author">by <strong>DMG</strong></div>
                 </div>
                 <div class="review-item">
-                    <h3>Can Not Say Enough About This Amazing Surgeon</h3>
                     <div class="review-stars">
                         <img src="https://www.drbrent.com/wp-content/uploads/5-stars-6.png" alt="5 stars" />
                     </div>
-                    <div class="review-date">– Written on April 22, 2016</div>
+                    <h3>Can Not Say Enough About This Amazing Surgeon</h3>
+                    <div class="review-date">April 22, 2016</div>
                     <p>I had a facelift with Dr. Moelleken 3 years ago and love it! I look completely natural not that pulled monster look that you see so often, I look great. Staff is very supportive both pre-post surgery. Minimal pain 1 day, quick recovery, back to work 10 days later. Can not say enough about this amazing surgeon. Thank you Dr. Moelleken!</p>
                     <div class="review-author">by <strong>RT</strong></div>
                 </div>
